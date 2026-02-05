@@ -50,8 +50,7 @@ public class ClassIndexer : MonoBehaviour
                     case 2:
                         return wisAmount;
                     default:
-                        // return new IndexOutOfRangeException();
-                        return 0;
+                        throw new IndexOutOfRangeException();
                 }
             }
 
@@ -85,8 +84,7 @@ public class ClassIndexer : MonoBehaviour
                     case Stat.Wis:
                         return wisAmount;
                     default:
-                        // return new IndexOutOfRangeException();
-                        return 0;
+                        throw new IndexOutOfRangeException();
                 }
             }
 
@@ -120,8 +118,7 @@ public class ClassIndexer : MonoBehaviour
                     case Stat.Wis:
                         return wisAmount;
                     default:
-                        // return new IndexOutOfRangeException();
-                        return 0;
+                        throw new IndexOutOfRangeException();
                 }
             }
 
