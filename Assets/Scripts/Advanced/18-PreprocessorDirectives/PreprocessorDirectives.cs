@@ -38,7 +38,7 @@ public class PreprocessorDirectives : MonoBehaviour
         
 #if !Net8_0
         Debug.Log("Net 8.0");
-#error Some error
+// #error Some error
 #endif
 
 #warning This is a warning
