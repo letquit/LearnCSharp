@@ -30,6 +30,7 @@ public class RefOutIn : MonoBehaviour
         unit.GetUnitData3(ref state3, out int healthAmount3, out string name3);
         Debug.Log(state3 + " " + healthAmount3 + " " + name3);
         unit.GetUnitData3(ref state3, out int _, out string name4);
+        unit.GetUnitData4(ref state3, in healthAmount1, out string name5);
     }
 
     public class Unit
