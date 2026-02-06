@@ -75,6 +75,8 @@ public class OverrideOperators : MonoBehaviour
 
         public static bool operator ==(ResourceAmount resourceAmountA, ResourceAmount resourceAmountB)
         {
+            if (ReferenceEquals(resourceAmountA, resourceAmountB)) return true;
+            if (ReferenceEquals(resourceAmountA, null) || ReferenceEquals(resourceAmountB, null)) return false;
             return resourceAmountA.resourceType == resourceAmountB.resourceType &&
                    resourceAmountA.amount == resourceAmountB.amount;
         }
