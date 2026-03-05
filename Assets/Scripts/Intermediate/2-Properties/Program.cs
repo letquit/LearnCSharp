@@ -43,7 +43,7 @@ public class Program : MonoBehaviour
     }
 }
 
-public class Player
+public partial class Player
 {
     public Player()
     {
